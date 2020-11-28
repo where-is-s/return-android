@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SectionButton">
+        <attr name="text" format="string" />
+        <attr name="image" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="TextMentionHelper">
+        <attr name="roundedTextHorizontalPadding" format="dimension"/>
+        <attr name="roundedTextVerticalPadding" format="dimension"/>
+        <attr name="roundedTextDrawable" format="reference"/>
+        <attr name="roundedTextDrawableLeft" format="reference"/>
+        <attr name="roundedTextDrawableMid" format="reference"/>
+        <attr name="roundedTextDrawableRight" format="reference"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:background="@color/primary_dark">
+
+        <re.returnapp.view.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/sortModeImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:padding="9dp"
+            android:alpha="0.8"
+            android:tint="@color/normal_text"
+            android:src="@drawable/ic_importance_sort" />
+
+        <CheckBox
+            android:id="@+id/showReviewedCheck"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/normal_text"
+            android:layout_gravity="center"
+            android:alpha="0.7" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_add"
+            android:tint="@color/primary_accent"
+            android:backgroundTint="@android:color/black"
+            app:fabSize="mini"
+            android:layout_margin="16dp" />
+
+    </FrameLayout>
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2px"-->
+<!--        android:background="@color/primary" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:backgroundTintMode="src_atop"
+        android:background="@drawable/bkgrd_gradient2">
+
+        <re.returnapp.view.SectionButton
+            android:id="@+id/peopleButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text="Люди"
+            app:image="@drawable/ic_people" />
+
+        <re.returnapp.view.SectionButton
+            android:id="@+id/periodsButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text="Периоды"
+            app:image="@drawable/ic_period" />
+
+        <re.returnapp.view.SectionButton
+            android:id="@+id/placesButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text="Места"
+            app:image="@drawable/ic_place" />
+
+        <re.returnapp.view.SectionButton
+            android:id="@+id/eventsButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text="События"
+            app:image="@drawable/ic_event" />
+
+        <re.returnapp.view.SectionButton
+            android:id="@+id/sessionsButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text="Сеансы"
+            app:image="@drawable/ic_session" />
+
+        <re.returnapp.view.SectionButton
+            android:id="@+id/practicesButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text="Практики"
+            app:image="@drawable/ic_practice" />
+
+        <re.returnapp.view.SectionButton
+            android:id="@+id/notesButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text="Заметки"
+            app:image="@drawable/ic_note" />
+
+        <re.returnapp.view.SectionButton
+            android:id="@+id/diaryButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text="Дневник"
+            app:image="@drawable/ic_diary" />
+
+        <re.returnapp.view.SectionButton
+            android:id="@+id/tagsButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:text="Теги"
+            app:image="@drawable/ic_tag" />
+
+    </LinearLayout>
+
+</LinearLayout>

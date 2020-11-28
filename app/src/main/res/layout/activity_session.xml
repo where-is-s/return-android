@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity"
+    android:background="@drawable/bkgrd_gradient3"
+    android:backgroundTintMode="src_atop">
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11:24"
+        android:textSize="48sp"
+        android:paddingBottom="80dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:id="@+id/doneButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:src="@drawable/ic_done"
+        android:layout_marginBottom="40dp"
+        android:alpha="0.8"
+        android:tint="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/cancelButton"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="start|top"
+        android:src="@drawable/ic_delete"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:alpha="0.4"
+        android:tint="@android:color/white" />
+
+</FrameLayout>

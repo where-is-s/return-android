@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Возврат</string>
+    <string name="longstr">"this is <annotation key="entityId" value="1">a paragraph \nthat would cover more than\ntwo</annotation> lines."</string>
+</resources>

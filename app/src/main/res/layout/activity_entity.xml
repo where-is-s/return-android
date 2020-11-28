@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="16dp"
+    android:paddingHorizontal="16dp"
+    android:orientation="vertical"
+    tools:context=".activity.EntityActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <re.returnapp.view.TypeView
+            android:id="@+id/typeView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_people"
+            android:tint="@color/primary"/>
+
+        <EditText
+            android:id="@+id/nameEdit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:maxLines="3"
+            android:background="@drawable/bkgrd_edit"
+            android:padding="12dp"
+            android:textSize="15sp"
+            android:inputType="text|textMultiLine|textCapSentences"
+            android:hint="Имя"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/importanceIcon"
+            android:visibility="gone"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_gravity="center" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/importanceSeekBar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingVertical="4dp"
+            android:min="0"
+            android:max="10"/>
+
+    </LinearLayout>
+
+    <re.returnapp.mention.MentionEditText
+        android:id="@+id/descriptionEdit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bkgrd_edit"
+        android:padding="12dp"
+        tools:text="@string/longstr"
+        android:textSize="14sp"
+        android:maxLines="100"
+        android:hint="Описание"
+        android:includeFontPadding="true"
+        android:lineSpacingExtra="2dp"
+        android:textIsSelectable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="text|textMultiLine|textAutoCorrect|textAutoComplete|textCapSentences"
+        app:roundedTextHorizontalPadding="0dp"
+        app:roundedTextVerticalPadding="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="8dp"
+        android:paddingTop="8dp">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/reviewedCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Перепросмотр закончен" />
+
+        </FrameLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/mentionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:src="@drawable/ic_mention"
+            android:tint="@color/primary_accent"
+            android:backgroundTint="@android:color/black"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

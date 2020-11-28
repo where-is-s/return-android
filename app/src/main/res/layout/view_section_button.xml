@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:layout_width="100dp"
+    tools:layout_height="80dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <ImageView
+                android:id="@+id/typeView"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_period"
+                />
+
+            <TextView
+                android:id="@+id/countText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="-4dp"
+                android:layout_gravity="right|bottom"
+                android:background="@drawable/bkgrd_count_text"
+                android:paddingHorizontal="1dp"
+                android:text="101"
+                android:textColor="@color/normal_text"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/bottom_bar_main"
+            android:text="Период"
+            android:textSize="10sp"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

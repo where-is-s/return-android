@@ -187,7 +187,7 @@ class MentionEditText @JvmOverloads constructor(
     }
 
     fun setTextWithMentions(text: String) {
-        setText(textMentionHelper.parseMentions(text))
+        setText(textMentionHelper.parseMentions(text, context))
     }
 
     fun getTextWithMentions(): String {

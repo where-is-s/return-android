@@ -31,8 +31,8 @@ class MainActivity : AppCompatActivity() {
         if (!Collection.load()) {
             for (i in 0..10) {
                 val test = Entity(i, Type.PEOPLE)
-                test.name = "Одноклассник " + i
-                test.description = "Мы вместе учились в школе номер " + i
+                test.name = "Person " + i
+                test.description = "We studied together at school number " + i
                 Collection.addEntity(test)
             }
             Collection.save()
@@ -123,18 +123,18 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onDeleteAction(entity: Entity) {
-                val mergeDialog = FindEntityDialog(this@MainActivity, "Заменить на...")
+                val mergeDialog = FindEntityDialog(this@MainActivity, getString(R.string.replace_with))
                 mergeDialog.selectListener = object : FindEntityDialog.SelectListener {
                     override fun onItemSelected(mergeIntoEntity: Entity) {
                         mergeDialog.dismiss()
                         val alertDialog = AlertDialog.Builder(this@MainActivity)
-                        alertDialog.setTitle("Удаление");
-                        alertDialog.setMessage("Вы уверены, что хотите удалить " + entity.name + ", заменив его вхождения на " + mergeIntoEntity.name + "?")
-                        alertDialog.setPositiveButton("Да") { _, _ ->
+                        alertDialog.setTitle(getString(R.string.removal));
+                        alertDialog.setMessage(getString(R.string.removal_format, entity.name, mergeIntoEntity.name))
+                        alertDialog.setPositiveButton(getString(R.string.yes)) { _, _ ->
                             Collection.merge(entity, mergeIntoEntity)
                             refreshAdapter()
                         }
-                        alertDialog.setNegativeButton("Нет", null)
+                        alertDialog.setNegativeButton(getString(R.string.no), null)
                         alertDialog.show()
                     }
                 }

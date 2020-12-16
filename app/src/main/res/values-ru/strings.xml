@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Возврат</string>
+    <string name="removal">Удаление</string>
+    <string name="removal_format" formatted="false">Вы уверены, что хотите удалить %s заменив его вхождения на %s?</string>
+    <string name="yes">Да</string>
+    <string name="replace_with">Заменить на…</string>
+    <string name="description">Описание</string>
+    <string name="name">Имя</string>
+    <string name="review_finished">Перепросмотр закончен</string>
+    <string name="search">Поиск</string>
+    <string name="no">Нет</string>
+    <string name="min">мин</string>
+
+    <string name="people">Люди</string>
+    <string name="periods">Периоды</string>
+    <string name="places">Места</string>
+    <string name="events">События</string>
+    <string name="sessions">Сеансы</string>
+    <string name="practices">Практики</string>
+    <string name="notes">Заметки</string>
+    <string name="diary">Дневник</string>
+    <string name="tags">Теги</string>
+
+    <string name="people_single">Человек</string>
+    <string name="period_single">Период</string>
+    <string name="place_single">Место</string>
+    <string name="event_single">Событие</string>
+    <string name="session_single">Сессия</string>
+    <string name="note_single">Заметка</string>
+    <string name="practice_single">Практика</string>
+    <string name="diary_single">Дневник</string>
+    <string name="tag_single">Тег</string>
+</resources>

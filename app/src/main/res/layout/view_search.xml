@@ -15,7 +15,7 @@
         android:paddingBottom="8dp"
         android:paddingLeft="8dp"
         android:paddingRight="36dp"
-        android:hint="Поиск"
+        android:hint="@string/search"
         android:includeFontPadding="true"
         android:lineSpacingExtra="2dp"
         android:textIsSelectable="true"

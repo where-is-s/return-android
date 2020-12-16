@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/bottom_bar_main"
-            android:text="Период"
+            tools:text="@string/period_single"
             android:textSize="10sp"
             />
 

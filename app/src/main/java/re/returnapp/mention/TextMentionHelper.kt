@@ -15,6 +15,7 @@
 */
 package re.returnapp.mention
 
+import android.content.Context
 import android.graphics.Canvas
 import android.graphics.drawable.Drawable
 import android.text.*
@@ -107,7 +108,7 @@ class TextMentionHelper(
         }
     }
 
-    fun parseMentions(source: String): SpannableStringBuilder {
+    fun parseMentions(source: String, context: Context): SpannableStringBuilder {
         val text = SpannableStringBuilder(source)
         var mentionIndex: Int
         while (text.indexOf("~@") > -1) {
@@ -123,7 +124,7 @@ class TextMentionHelper(
                 text.replace(mentionIndex, idEnd, "")
                 continue
             }
-            val nameStr = '\uFEFF' + mentionedEntity.displayName + '\uFEFF'
+            val nameStr = '\uFEFF' + mentionedEntity.getDisplayName(context) + '\uFEFF'
             text.replace(mentionIndex, idEnd + 1, nameStr)
             text.setSpan(Annotation("entityId", id.toString()),
                 mentionIndex,

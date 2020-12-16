@@ -25,7 +25,7 @@ class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), Layout
         selected: Boolean
     ) {
         itemView.backgroundLayout.setBackgroundResource(if (selected) R.drawable.bkgrd_edit_dark else R.drawable.bkgrd_edit)
-        itemView.headerText.text = entity.displayName
+        itemView.headerText.text = entity.getDisplayName(itemView.context)
         var paintFlags = itemView.headerText.getPaintFlags()
         paintFlags = if (entity.reviewed) paintFlags or Paint.STRIKE_THRU_TEXT_FLAG else
             paintFlags and Paint.STRIKE_THRU_TEXT_FLAG.inv()
@@ -38,7 +38,7 @@ class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), Layout
         val reviewInfoVisible = !selected && entity.reviewable
         if (reviewInfoVisible) {
             val sessionTime = Collection.findSessionTime(entity)
-            itemView.sessionTimeText.text = "${sessionTime.sessionCount} (${sessionTime.totalTime} мин)"
+            itemView.sessionTimeText.text = "${sessionTime.sessionCount} (${sessionTime.totalTime} ${itemView.context.getString(R.string.min)})"
             itemView.infoLayout.visibility = if (sessionTime.sessionCount > 0) View.VISIBLE else View.GONE
         } else {
             itemView.infoLayout.visibility = View.GONE

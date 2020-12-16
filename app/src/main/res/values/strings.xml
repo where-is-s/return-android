@@ -1,4 +1,34 @@
 <resources>
-    <string name="app_name">Возврат</string>
+    <string name="app_name">Return</string>
     <string name="longstr">"this is <annotation key="entityId" value="1">a paragraph \nthat would cover more than\ntwo</annotation> lines."</string>
+    <string name="removal">Deletion</string>
+    <string name="removal_format" formatted="false">Are you sure you want to delete %s by replacing it with %s?</string>
+    <string name="yes">Yes</string>
+    <string name="replace_with">Replace with…</string>
+    <string name="description">Description</string>
+    <string name="name">Name</string>
+    <string name="review_finished">Finished review</string>
+    <string name="search">Search</string>
+    <string name="no">No</string>
+    <string name="min">min</string>
+
+    <string name="people">People</string>
+    <string name="periods">Periods</string>
+    <string name="places">Places</string>
+    <string name="events">Events</string>
+    <string name="sessions">Sessions</string>
+    <string name="practices">Practices</string>
+    <string name="notes">Notes</string>
+    <string name="diary">Diary</string>
+    <string name="tags">Tags</string>
+
+    <string name="people_single">Human</string>
+    <string name="period_single">Period</string>
+    <string name="place_single">Place</string>
+    <string name="event_single">Event</string>
+    <string name="session_single">Session</string>
+    <string name="note_single">Note</string>
+    <string name="practice_single">Practice</string>
+    <string name="diary_single">Diary entry</string>
+    <string name="tag_single">Tag</string>
 </resources>

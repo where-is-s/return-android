@@ -80,7 +80,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:text="Люди"
+            app:text="@string/people"
             app:image="@drawable/ic_people" />
 
         <re.returnapp.view.SectionButton
@@ -88,7 +88,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:text="Периоды"
+            app:text="@string/periods"
             app:image="@drawable/ic_period" />
 
         <re.returnapp.view.SectionButton
@@ -96,7 +96,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:text="Места"
+            app:text="@string/places"
             app:image="@drawable/ic_place" />
 
         <re.returnapp.view.SectionButton
@@ -104,7 +104,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:text="События"
+            app:text="@string/events"
             app:image="@drawable/ic_event" />
 
         <re.returnapp.view.SectionButton
@@ -112,7 +112,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:text="Сеансы"
+            app:text="@string/sessions"
             app:image="@drawable/ic_session" />
 
         <re.returnapp.view.SectionButton
@@ -120,7 +120,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:text="Практики"
+            app:text="@string/practices"
             app:image="@drawable/ic_practice" />
 
         <re.returnapp.view.SectionButton
@@ -128,7 +128,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:text="Заметки"
+            app:text="@string/notes"
             app:image="@drawable/ic_note" />
 
         <re.returnapp.view.SectionButton
@@ -136,7 +136,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:text="Дневник"
+            app:text="@string/diary"
             app:image="@drawable/ic_diary" />
 
         <re.returnapp.view.SectionButton
@@ -144,7 +144,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:text="Теги"
+            app:text="@string/tags"
             app:image="@drawable/ic_tag" />
 
     </LinearLayout>

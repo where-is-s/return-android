@@ -1,5 +1,7 @@
 package re.returnapp.model
 
+import android.content.Context
+import re.returnapp.R
 import java.text.DateFormat
 import java.text.SimpleDateFormat
 
@@ -17,9 +19,9 @@ open class Entity (
         private val dateFormat = SimpleDateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.SHORT)
     }
 
-    val displayName: String get() {
+    fun getDisplayName(context: Context): String {
         return when (type) {
-            Type.SESSION -> "${dateFormat.format(created)} - $name мин"
+            Type.SESSION -> "${dateFormat.format(created)} - $name ${context.getString(R.string.min)}"
             Type.DIARY -> dateFormat.format(created)
             else -> name
         }

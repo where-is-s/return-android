@@ -33,7 +33,7 @@
             android:padding="12dp"
             android:textSize="15sp"
             android:inputType="text|textMultiLine|textCapSentences"
-            android:hint="Имя"/>
+            android:hint="@string/name"/>
 
     </LinearLayout>
 
@@ -71,7 +71,7 @@
         tools:text="@string/longstr"
         android:textSize="14sp"
         android:maxLines="100"
-        android:hint="Описание"
+        android:hint="@string/description"
         android:includeFontPadding="true"
         android:lineSpacingExtra="2dp"
         android:textIsSelectable="true"
@@ -96,7 +96,7 @@
                 android:id="@+id/reviewedCheck"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Перепросмотр закончен" />
+                android:text="@string/review_finished" />
 
         </FrameLayout>
         <com.google.android.material.floatingactionbutton.FloatingActionButton

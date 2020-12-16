@@ -24,15 +24,15 @@ class ChooseTypeDialog(context: Context?) : AppCompatDialog(context) {
         fun bind(type: Type) {
             itemView.typeView.setImageResource(type.toDrawable())
             itemView.name.text = when (type) {
-                Type.PEOPLE -> "Человек"
-                Type.PERIOD -> "Период"
-                Type.PLACE -> "Место"
-                Type.EVENT -> "Событие"
-                Type.SESSION -> "Сессия"
-                Type.NOTE -> "Заметка"
-                Type.PRACTICE -> "Практики"
-                Type.DIARY -> "Дневник"
-                Type.TAG -> "Теги"
+                Type.PEOPLE -> context.getString(R.string.people_single)
+                Type.PERIOD -> context.getString(R.string.period_single)
+                Type.PLACE -> context.getString(R.string.place_single)
+                Type.EVENT -> context.getString(R.string.event_single)
+                Type.SESSION -> context.getString(R.string.session_single)
+                Type.NOTE -> context.getString(R.string.note_single)
+                Type.PRACTICE -> context.getString(R.string.practice_single)
+                Type.DIARY -> context.getString(R.string.diary_single)
+                Type.TAG -> context.getString(R.string.tag_single)
             }
             itemView.setOnClickListener {
                 onItemSelected(type)
